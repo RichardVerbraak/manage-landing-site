@@ -20,13 +20,27 @@ body {
   color: #242d52;
 }
 
+.btn {
+  font-size: 1.4rem;
+  text-decoration: none;
+  background-color: #e76646;
+  color: #fff;
+  padding: 1.5rem 4.5rem;
+  font-weight: 500;
+  border-radius: 5rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.6rem;
   padding-top: 5rem;
   padding-bottom: 10rem;
   font-weight: 500;
+}
+.nav__logo {
+  height: 2.5rem;
 }
 .nav__list {
   display: flex;

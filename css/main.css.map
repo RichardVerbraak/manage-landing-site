@@ -1,0 +1,1 @@
+{"version":3,"sources":["../sass/base/_base.scss","main.css","../sass/base/_typography.scss","../sass/abstracts/_variables.scss","../sass/components/_navigation.scss"],"names":[],"mappings":"AAAA;;;EAGC,SAAA;EACA,UAAA;EACA,mBAAA;ACCD;;ADEA;EACC,gBAAA;ACCD;;ADEA;EACC,sBAAA;ACCD;;ACdA;EACC,yCCUc;EDTd,gBCec;EDdd,cCKiB;AFYlB;;AGpBA;EACC,cDgBc;AFOf","file":"main.css"}

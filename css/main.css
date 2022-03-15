@@ -26,6 +26,7 @@ body {
   font-size: 1.6rem;
   padding-top: 5rem;
   padding-bottom: 10rem;
+  font-weight: 500;
 }
 .nav__list {
   display: flex;
@@ -33,6 +34,28 @@ body {
   list-style: none;
   justify-content: space-around;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 40%;
+}
+.header__title {
+  font-size: 6rem;
+}
+.header__subtext {
+  width: 75%;
+  font-size: 2rem;
+  color: #9095a7;
+}
+.header__btn {
+  align-self: flex-start;
+}
+
 .section-main {
   background-image: url("../../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;

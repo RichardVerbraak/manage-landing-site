@@ -1,0 +1,29 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		flex-basis: 40%;
+	}
+
+	&__title {
+		font-size: 6rem;
+	}
+
+	&__subtext {
+		width: 75%;
+		font-size: 2rem;
+		color: $color-gray--400;
+	}
+
+	&__images {
+	}
+
+	&__btn {
+		align-self: flex-start;
+	}
+}

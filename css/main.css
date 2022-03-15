@@ -28,6 +28,11 @@ body {
   padding: 1.5rem 4.5rem;
   font-weight: 500;
   border-radius: 5rem;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: rgba(231, 102, 70, 0.75);
+  box-shadow: 0 0.5rem 1rem rgba(231, 102, 70, 0.5);
 }
 
 .nav {

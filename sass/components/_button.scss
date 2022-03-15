@@ -7,4 +7,11 @@
 	padding: 1.5rem 4.5rem;
 	font-weight: $font-medium;
 	border-radius: 5rem;
+
+	transition: all 0.2s;
+
+	&:hover {
+		background-color: rgba($color-primary, 0.75);
+		box-shadow: 0 0.5rem 1rem rgba($color-primary, 0.5);
+	}
 }

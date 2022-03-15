@@ -17,9 +17,25 @@ body {
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
-  color: #1d1e25;
+  color: #242d52;
 }
 
 .nav {
-  font-size: 400;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.nav__list {
+  display: flex;
+  flex-basis: 45%;
+  list-style: none;
+  justify-content: space-around;
+}
+.section-main {
+  background-image: url("../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  max-width: 144rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

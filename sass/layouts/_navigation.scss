@@ -1,0 +1,22 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	font-size: $default-font-size;
+
+	padding-top: 5rem;
+	padding-bottom: 10rem;
+
+	&__logo {
+	}
+
+	&__list {
+		display: flex;
+		flex-basis: 45%;
+
+		list-style: none;
+		justify-content: space-around;
+
+		&--item {
+		}
+	}
+}

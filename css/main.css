@@ -135,8 +135,12 @@ body {
 }
 
 .section-main {
-  background-image: url("../../images/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
   max-width: 144rem;
   margin: 0 auto;
+}
+
+.background {
+  background-image: url("../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top -17% right -6%;
 }/*# sourceMappingURL=main.css.map */

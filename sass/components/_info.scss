@@ -6,14 +6,17 @@
 
 	&__header {
 		flex-basis: 40%;
+
 		&--title {
 			font-size: 4rem;
+			padding-bottom: 3.5rem;
 		}
 
 		&--sub {
 			font-size: 2rem;
 			color: $color-gray--400;
 			width: 75%;
+			line-height: $line-height-subtext;
 		}
 	}
 
@@ -29,19 +32,39 @@
 
 // The UL
 .list {
+	display: grid;
+	row-gap: 4rem;
 	list-style: none;
 }
 
 // The actual list items
 .item {
+	display: grid;
+	column-gap: 4rem;
+	row-gap: 2rem;
+
+	align-items: center;
+
+	&__tag {
+		background-color: $color-primary;
+		color: #fff;
+		padding: 1.5rem 3.5rem;
+		border-radius: 5rem;
+
+		font-size: $default-font-size;
+		font-weight: $font-large;
+	}
+
 	&__title {
 		font-size: 1.8rem;
 		font-weight: $font-large;
 	}
 
 	&__sub {
+		grid-column: 2/ 3;
 		font-size: $default-font-size;
 		font-weight: $font-regular;
 		color: $color-gray--400;
+		line-height: $line-height-subtext;
 	}
 }

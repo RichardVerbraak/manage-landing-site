@@ -1,0 +1,47 @@
+.info {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 10rem 0rem;
+
+	&__header {
+		flex-basis: 40%;
+		&--title {
+			font-size: 4rem;
+		}
+
+		&--sub {
+			font-size: 2rem;
+			color: $color-gray--400;
+			width: 75%;
+		}
+	}
+
+	// The container of the list
+	&__list {
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-between;
+		flex-basis: 40%;
+	}
+}
+
+// The UL
+.list {
+	list-style: none;
+}
+
+// The actual list items
+.item {
+	&__title {
+		font-size: 1.8rem;
+		font-weight: $font-large;
+	}
+
+	&__sub {
+		font-size: $default-font-size;
+		font-weight: $font-regular;
+		color: $color-gray--400;
+	}
+}

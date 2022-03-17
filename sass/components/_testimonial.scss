@@ -1,0 +1,33 @@
+.testimonial {
+	// Test
+	// padding: 0rem 3rem;
+
+	position: relative;
+
+	background-color: #f9f9f9;
+
+	&__img {
+		position: absolute;
+		width: 8rem;
+		top: -18%;
+		transform: translate(-50%);
+		left: 50%;
+	}
+
+	&__name {
+		font-size: 2rem;
+		font-weight: $font-large;
+
+		padding-top: 6rem;
+		text-align: center;
+	}
+
+	&__text {
+		font-size: $default-font-size;
+		color: $color-gray--400;
+		line-height: $line-height-subtext;
+		text-align: center;
+
+		padding: 3rem;
+	}
+}

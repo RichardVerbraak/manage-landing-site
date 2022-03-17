@@ -93,6 +93,45 @@ body {
   line-height: 3rem;
 }
 
+.carousel {
+  position: relative;
+  padding: 10rem 0rem;
+}
+.carousel__title {
+  font-size: 4rem;
+  padding-bottom: 5rem;
+}
+.carousel__list {
+  display: flex;
+  list-style-type: none;
+  gap: 5rem;
+}
+
+.testimonial {
+  position: relative;
+  background-color: #f9f9f9;
+}
+.testimonial__img {
+  position: absolute;
+  width: 8rem;
+  top: -18%;
+  transform: translate(-50%);
+  left: 50%;
+}
+.testimonial__name {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 6rem;
+  text-align: center;
+}
+.testimonial__text {
+  font-size: 1.6rem;
+  color: #9095a7;
+  line-height: 3rem;
+  text-align: center;
+  padding: 3rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -138,6 +177,13 @@ body {
   position: relative;
   max-width: 144rem;
   margin: 0 auto;
+}
+
+.section-carousel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15rem 0rem;
 }
 
 .background {

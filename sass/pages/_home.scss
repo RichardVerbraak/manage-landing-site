@@ -5,6 +5,13 @@
 	margin: 0 auto;
 }
 
+.section-carousel {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 15rem 0rem;
+}
+
 .background {
 	background-image: url('../../images/bg-tablet-pattern.svg');
 	background-repeat: no-repeat;

@@ -50,7 +50,7 @@ body {
 .info {
   display: flex;
   justify-content: space-between;
-  padding: 10rem 0rem;
+  padding: 8rem 0rem;
 }
 .info__header {
   flex-basis: 40%;
@@ -216,7 +216,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 15rem 0rem;
+  padding: 10rem 0rem 15rem;
 }
 
 .section-simplify {

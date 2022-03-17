@@ -1,3 +1,5 @@
+// Add different buttons? Header footer etc...
+
 .btn {
 	font-size: 1.4rem;
 	text-decoration: none;
@@ -10,8 +12,31 @@
 
 	transition: all 0.2s;
 
-	&:hover {
-		background-color: rgba($color-primary, 0.75);
-		box-shadow: 0 0.5rem 1rem rgba($color-primary, 0.5);
+	&--standard {
+		&:hover {
+			background-color: rgba($color-primary, 0.75);
+			box-shadow: 0 0.5rem 1rem rgba($color-primary, 0.5);
+		}
+	}
+
+	&--header {
+		align-self: flex-start;
+	}
+
+	&--simplify {
+		background-color: #fff;
+		color: $color-primary;
+		align-self: center;
+
+		&:hover {
+			background-color: rgba(#fff, 0.75);
+			box-shadow: 0 0.5rem 1rem rgba(#fff, 0.5);
+		}
+
+		// Large here?
+		font-weight: $font-large;
+	}
+
+	&--footer {
 	}
 }

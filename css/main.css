@@ -30,11 +30,23 @@ body {
   border-radius: 5rem;
   transition: all 0.2s;
 }
-.btn:hover {
+.btn--standard:hover {
   background-color: rgba(231, 102, 70, 0.75);
   box-shadow: 0 0.5rem 1rem rgba(231, 102, 70, 0.5);
 }
-
+.btn--header {
+  align-self: flex-start;
+}
+.btn--simplify {
+  background-color: #fff;
+  color: #e76646;
+  align-self: center;
+  font-weight: 700;
+}
+.btn--simplify:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.5);
+}
 .info {
   display: flex;
   justify-content: space-between;
@@ -132,6 +144,17 @@ body {
   padding: 3rem;
 }
 
+.simplify__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 10rem 0rem;
+}
+.simplify__title {
+  flex-basis: 30%;
+  color: #fff;
+  font-size: 4rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -169,10 +192,6 @@ body {
   color: #9095a7;
   line-height: 3rem;
 }
-.header__btn {
-  align-self: flex-start;
-}
-
 .section-main {
   position: relative;
   max-width: 144rem;
@@ -184,6 +203,10 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 15rem 0rem;
+}
+
+.section-simplify {
+  background-color: #e76646;
 }
 
 .background {

@@ -44,7 +44,7 @@ body {
   font-weight: 700;
 }
 .btn--simplify:hover {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.5);
 }
 .info {
@@ -147,12 +147,26 @@ body {
 .simplify__content {
   display: flex;
   justify-content: space-around;
-  padding: 10rem 0rem;
+  padding: 9rem 0rem;
 }
 .simplify__title {
   flex-basis: 30%;
   color: #fff;
   font-size: 4rem;
+}
+
+.background {
+  background-image: url("../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top -17% right -6%;
+}
+.background::after {
+  content: url(../../images/bg-tablet-pattern.svg);
+  position: absolute;
+  top: 218%;
+  z-index: -1;
+  left: -24%;
+  width: 100%;
 }
 
 .nav {
@@ -207,18 +221,9 @@ body {
 
 .section-simplify {
   background-color: #e76646;
-}
-
-.background {
-  background-image: url("../../images/bg-tablet-pattern.svg");
+  background-image: url(../../images/bg-simplify-section-desktop.svg);
   background-repeat: no-repeat;
-  background-position: top -17% right -6%;
-}
-.background::after {
-  content: url(../../images/bg-tablet-pattern.svg);
-  position: absolute;
-  top: 218%;
-  z-index: -1;
-  left: -24%;
-  width: 100%;
+  background-size: 92%;
+  background-position-x: 256%;
+  background-position-y: 88%;
 }/*# sourceMappingURL=main.css.map */

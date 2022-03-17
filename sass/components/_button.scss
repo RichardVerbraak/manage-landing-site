@@ -12,6 +12,7 @@
 
 	transition: all 0.2s;
 
+	// standard hover animation
 	&--standard {
 		&:hover {
 			background-color: rgba($color-primary, 0.75);
@@ -29,7 +30,7 @@
 		align-self: center;
 
 		&:hover {
-			background-color: rgba(#fff, 0.75);
+			background-color: lighten(#fff, 0.5);
 			box-shadow: 0 0.5rem 1rem rgba(#fff, 0.5);
 		}
 

@@ -1,0 +1,14 @@
+.background {
+	background-image: url('../../images/bg-tablet-pattern.svg');
+	background-repeat: no-repeat;
+	background-position: top -17% right -6%;
+
+	&::after {
+		content: url(../../images/bg-tablet-pattern.svg);
+		position: absolute;
+		top: 218%;
+		z-index: -1;
+		left: -24%;
+		width: 100%;
+	}
+}

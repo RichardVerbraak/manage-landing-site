@@ -1,8 +1,11 @@
 .simplify {
 	&__content {
 		display: flex;
-		justify-content: space-around;
-		padding: 9rem 0rem;
+		justify-content: space-between;
+		max-width: 144rem;
+		margin: 0 auto;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
 	}
 
 	&__title {

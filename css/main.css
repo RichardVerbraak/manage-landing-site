@@ -146,8 +146,11 @@ body {
 
 .simplify__content {
   display: flex;
-  justify-content: space-around;
-  padding: 9rem 0rem;
+  justify-content: space-between;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .simplify__title {
   flex-basis: 30%;
@@ -169,6 +172,14 @@ body {
   width: 100%;
 }
 
+.social-media {
+  display: flex;
+  list-style-type: none;
+}
+.social-media__icon {
+  height: 2.5rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -180,7 +191,7 @@ body {
 .nav__logo {
   height: 2.5rem;
 }
-.nav__list {
+.nav__links {
   display: flex;
   flex-basis: 45%;
   list-style: none;
@@ -206,6 +217,40 @@ body {
   color: #9095a7;
   line-height: 3rem;
 }
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "logo links links subscription" "empty links links empty" "empty links links empty" "socials links links copyright";
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.footer__logo {
+  background-image: url("../../images/logo.svg");
+  background-repeat: no-repeat;
+  grid-area: "logo";
+}
+.footer__links {
+  list-style-type: none;
+  grid-area: "links";
+}
+.footer__links--link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+.footer__subscription {
+  grid-area: "subscription";
+}
+.footer__copyright {
+  grid-area: "copyright";
+  color: #9095a7;
+  font-size: 1.4rem;
+}
+
 .section-main {
   position: relative;
   max-width: 144rem;
@@ -226,4 +271,8 @@ body {
   background-size: 92%;
   background-position-x: 256%;
   background-position-y: 88%;
+}
+
+.section-footer {
+  background-color: #1d1e25;
 }/*# sourceMappingURL=main.css.map */

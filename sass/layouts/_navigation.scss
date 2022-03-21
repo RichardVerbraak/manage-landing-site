@@ -12,14 +12,14 @@
 		height: 2.5rem;
 	}
 
-	&__list {
+	&__links {
 		display: flex;
 		flex-basis: 45%;
 
 		list-style: none;
 		justify-content: space-around;
 
-		&--item {
+		&--link {
 		}
 	}
 }

@@ -12,4 +12,7 @@ html {
 
 body {
 	box-sizing: border-box;
+
+	// Set to relative to position the background correctly
+	position: relative;
 }

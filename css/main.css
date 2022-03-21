@@ -12,6 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
+  position: relative;
 }
 
 body {
@@ -158,18 +159,23 @@ body {
   font-size: 4rem;
 }
 
-.background {
-  background-image: url("../../images/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position: top -17% right -6%;
-}
-.background::after {
-  content: url(../../images/bg-tablet-pattern.svg);
+.background__top {
   position: absolute;
-  top: 218%;
-  z-index: -1;
-  left: -24%;
+  height: 100%;
   width: 100%;
+  background-image: url(../../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top -7% right -6%;
+  z-index: -1;
+}
+.background__bottom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 42% left -37%;
+  z-index: -1;
 }
 
 .social-media {
@@ -177,7 +183,7 @@ body {
   list-style-type: none;
 }
 .social-media__icon {
-  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .nav {
@@ -219,9 +225,8 @@ body {
 }
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "logo links links subscription" "empty links links empty" "empty links links empty" "socials links links copyright";
+  grid-template-columns: -webkit-min-content 1fr 1fr 2fr;
+  grid-template-columns: min-content 1fr 1fr 2fr;
   max-width: 144rem;
   margin: 0 auto;
   padding-top: 10rem;
@@ -230,11 +235,9 @@ body {
 .footer__logo {
   background-image: url("../../images/logo.svg");
   background-repeat: no-repeat;
-  grid-area: "logo";
 }
 .footer__links {
   list-style-type: none;
-  grid-area: "links";
 }
 .footer__links--link {
   font-size: 1.6rem;
@@ -242,11 +245,7 @@ body {
   text-decoration: none;
   color: #fff;
 }
-.footer__subscription {
-  grid-area: "subscription";
-}
 .footer__copyright {
-  grid-area: "copyright";
   color: #9095a7;
   font-size: 1.4rem;
 }

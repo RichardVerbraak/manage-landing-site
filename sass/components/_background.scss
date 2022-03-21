@@ -1,14 +1,25 @@
 .background {
-	background-image: url('../../images/bg-tablet-pattern.svg');
-	background-repeat: no-repeat;
-	background-position: top -17% right -6%;
-
-	&::after {
-		content: url(../../images/bg-tablet-pattern.svg);
+	&__top {
 		position: absolute;
-		top: 218%;
-		z-index: -1;
-		left: -24%;
+		height: 100%;
 		width: 100%;
+
+		background-image: url(../../images/bg-tablet-pattern.svg);
+		background-repeat: no-repeat;
+		background-position: top -7% right -6%;
+
+		z-index: -1;
+	}
+
+	&__bottom {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+
+		background-image: url(../../images/bg-tablet-pattern.svg);
+		background-repeat: no-repeat;
+		background-position: bottom 42% left -37%;
+
+		z-index: -1;
 	}
 }

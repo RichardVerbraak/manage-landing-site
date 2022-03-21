@@ -1,13 +1,6 @@
 .footer {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-
-	grid-template-areas:
-		'logo links links subscription'
-		'empty links links empty'
-		'empty links links empty'
-		'socials links links copyright';
+	grid-template-columns: min-content 1fr 1fr 2fr;
 
 	max-width: 144rem;
 	margin: 0 auto;
@@ -17,13 +10,10 @@
 	&__logo {
 		background-image: url('../../images/logo.svg');
 		background-repeat: no-repeat;
-
-		grid-area: 'logo';
 	}
 
 	&__links {
 		list-style-type: none;
-		grid-area: 'links';
 
 		&--link {
 			font-size: $default-font-size;
@@ -34,8 +24,6 @@
 	}
 
 	&__subscription {
-		grid-area: 'subscription';
-
 		&--input {
 		}
 
@@ -44,8 +32,6 @@
 	}
 
 	&__copyright {
-		grid-area: 'copyright';
-
 		color: $color-gray--400;
 		font-size: 1.4rem;
 	}

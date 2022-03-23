@@ -225,16 +225,13 @@ body {
 }
 .footer {
   display: grid;
-  grid-template-columns: -webkit-min-content 1fr 1fr 2fr;
-  grid-template-columns: min-content 1fr 1fr 2fr;
   max-width: 144rem;
   margin: 0 auto;
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
 .footer__logo {
-  background-image: url("../../images/logo.svg");
-  background-repeat: no-repeat;
+  height: 2.5rem;
 }
 .footer__links {
   list-style-type: none;

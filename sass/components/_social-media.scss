@@ -1,9 +1,17 @@
 .social-media {
 	display: flex;
-
 	list-style-type: none;
+	justify-content: space-between;
+	align-items: center;
+
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
 
 	&__icon {
 		width: 2.5rem;
+
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
 	}
 }

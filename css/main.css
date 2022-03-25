@@ -26,10 +26,12 @@ body {
   text-decoration: none;
   background-color: #e76646;
   color: #fff;
+  border: none;
   padding: 1.5rem 4.5rem;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 5rem;
   transition: all 0.2s;
+  cursor: pointer;
 }
 .btn--standard:hover {
   background-color: rgba(231, 102, 70, 0.75);
@@ -42,12 +44,19 @@ body {
   background-color: #fff;
   color: #e76646;
   align-self: center;
-  font-weight: 700;
 }
 .btn--simplify:hover {
   background-color: white;
   box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.5);
 }
+.btn--footer {
+  padding: 1.5rem 3rem;
+}
+.btn--footer:hover {
+  background-color: #e76646;
+  box-shadow: 0 0.5rem 1rem rgba(231, 102, 70, 0.5);
+}
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -181,9 +190,16 @@ body {
 .social-media {
   display: flex;
   list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 .social-media__icon {
   width: 2.5rem;
+}
+.social-media__icon:not(:last-child) {
+  margin-right: 1.5rem;
 }
 
 .nav {
@@ -225,26 +241,74 @@ body {
 }
 .footer {
   display: grid;
+  grid-template-columns: -webkit-min-content 1fr 1fr 2fr;
+  grid-template-columns: min-content 1fr 1fr 2fr;
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
   max-width: 144rem;
   margin: 0 auto;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  align-items: center;
 }
 .footer__logo {
   height: 2.5rem;
 }
-.footer__links {
-  list-style-type: none;
-}
-.footer__links--link {
+.footer__link {
   font-size: 1.6rem;
   font-weight: 400;
   text-decoration: none;
   color: #fff;
+  padding: 1.5rem 0;
+}
+.footer__link--home {
+  grid-column: 2/3;
+}
+.footer__link--pricing {
+  grid-column: 2/3;
+}
+.footer__link--products {
+  grid-column: 2/3;
+}
+.footer__link--about {
+  grid-column: 2/3;
+}
+.footer__link--careers {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.footer__link--community {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.footer__link--privacy {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.footer__subscription {
+  display: flex;
+  justify-content: space-between;
+  grid-row: 1/1;
+  grid-column: 4/5;
+}
+.footer__subscription--input {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1.4rem;
+  color: #e76646;
+  padding: 1.8rem 3rem;
+  border: none;
+  border-radius: 4rem;
+}
+.footer__subscription--input:focus-visible {
+  outline-color: #e76646;
+  outline-offset: 1px;
 }
 .footer__copyright {
+  grid-column: 4/5;
+  grid-row: 4/5;
   color: #9095a7;
   font-size: 1.4rem;
+  justify-self: self-end;
 }
 
 .section-main {

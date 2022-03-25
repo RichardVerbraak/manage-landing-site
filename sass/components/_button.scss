@@ -5,12 +5,15 @@
 	text-decoration: none;
 	background-color: $color-primary;
 	color: #fff;
+	border: none;
 
 	padding: 1.5rem 4.5rem;
-	font-weight: $font-medium;
+	font-weight: $font-large;
 	border-radius: 5rem;
 
 	transition: all 0.2s;
+
+	cursor: pointer;
 
 	// standard hover animation
 	&--standard {
@@ -33,11 +36,14 @@
 			background-color: lighten(#fff, 0.5);
 			box-shadow: 0 0.5rem 1rem rgba(#fff, 0.5);
 		}
-
-		// Large here?
-		font-weight: $font-large;
 	}
 
 	&--footer {
+		padding: 1.5rem 3rem;
+
+		&:hover {
+			background-color: rgba($color-primary, 1);
+			box-shadow: 0 0.5rem 1rem rgba($color-primary, 0.5);
+		}
 	}
 }
